@@ -21,9 +21,9 @@ export default {
         params
       );
 
-      // if (!isValid) {
-      //   return new Response("Unauthorized Signature", { status: 401 });
-      // }
+      if (!isValid) {
+        return new Response("Unauthorized Signature", { status: 401 });
+      }
 
       // 2. 构造消息内容
       const from = params.From || "Unknown";
@@ -43,7 +43,13 @@ export default {
         }),
       });
 
-      return new Response("Success", { status: 200 });
+      return new Response(
+          '<?xml version="1.0" encoding="UTF-8"?><Response></Response>', 
+          {
+              headers: { 'Content-Type': 'text/xml' },
+              status: 200
+          }
+      );
     } catch (err) {
       return new Response("Internal Error: " + err.message, { status: 500 });
     }
