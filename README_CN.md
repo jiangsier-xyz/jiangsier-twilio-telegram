@@ -36,8 +36,7 @@
 * **`TWILIO_AUTH_TOKEN`**: 
   - 登录 [Twilio Console](https://console.twilio.com/)，在首页 **Account Info** 处复制。
 * **`WEBHOOK_URL`**: 
-  - 你的 Worker 自定义域名（例如 `https://sms.yourname.tech`）。
-  - **重要**：建议不要带末尾斜杠 `/`，并确保与 Twilio 后台填写的 URL 完全一致。
+  - 你的 Worker 自定义域名（例如 `https://sms.yourname.tech/`）。
 
 > **安全提示**：请对 `TG_BOT_TOKEN` 和 `TWILIO_AUTH_TOKEN` 点击 **Encrypt** 进行加密处理。
 
