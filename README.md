@@ -36,8 +36,7 @@ After deployment, navigate to **Settings -> Variables** in your Worker dashboard
 * **`TWILIO_AUTH_TOKEN`**: 
   - Find this in the **Account Info** section of your [Twilio Console](https://console.twilio.com/).
 * **`WEBHOOK_URL`**: 
-  - Your Worker's public URL (e.g., `https://sms.yourname.tech`).
-  - **Crucial**: It is recommended NOT to include a trailing slash `/`.
+  - Your Worker's public URL (e.g., `https://sms.yourname.tech/`).
 
 > **Security Note**: Click **Encrypt** for `TG_BOT_TOKEN` and `TWILIO_AUTH_TOKEN` to keep them secure.
 
