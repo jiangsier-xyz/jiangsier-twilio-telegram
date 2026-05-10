@@ -21,9 +21,9 @@ export default {
         params
       );
 
-      if (!isValid) {
-        return new Response("Unauthorized Signature", { status: 401 });
-      }
+      // if (!isValid) {
+      //   return new Response("Unauthorized Signature", { status: 401 });
+      // }
 
       // 2. 构造消息内容
       const from = params.From || "Unknown";
